@@ -6,5 +6,5 @@ neonmain.textContent = 'nion!!';
 neonmain.style.color = '#abcdef';
 
 neonmain.addEventListener('click', () => {
-  neonmain.style.fontsize = neonmain.style.fontsize + 26;
+  neonmain.style.fontsize = '2.6em';
 });
