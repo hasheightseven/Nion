@@ -12,7 +12,7 @@ async function ello() {
     // Function to change color
     function changeColor() {
         // Set the text color to the next color in the array
-        document.getElementById('neonmain').style.color = colors[currentColorIndex];
+        neonmain.style.color = colors[currentColorIndex];
 
         // Move to the next color, and loop back to the first color when reaching the end
         currentColorIndex = (currentColorIndex + 1) % colors.length;
