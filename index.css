@@ -6,6 +6,9 @@
 
 html, body {
     background-color: #001928;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header {
@@ -14,9 +17,6 @@ header {
 
 main {
     height: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 footer {
