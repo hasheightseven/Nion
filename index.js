@@ -9,3 +9,5 @@ ellomast.style.color = '#abcdef';
 ellomast.addEventListener('click', () => {
   ellomast.style.fontsize = ellomast.style.fontsize + 26;
 });
+
+neonmonkey.appendChild(ellomast);
