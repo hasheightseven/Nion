@@ -1,13 +1,11 @@
 export const neonmonkey = document.getElementById('neon-monkey-main');
 
-neonmonkey.style.backgroundColor = '#001928';
+const ellomast = document.createElement('div');
 
-const ellomast = document.getElementById('ello-mastaru');
-
-ellomast.textContent += '!!';
+ellomast.textContent = 'nion!!';
 
 ellomast.style.color = '#abcdef';
 
 ellomast.addEventListener('click', () => {
-  window.location.href = '/';
+  ellomast.style.fontsize = ellomast.style.fontsize + 26;
 });
