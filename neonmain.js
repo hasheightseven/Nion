@@ -21,3 +21,5 @@ async function ello() {
     // Set an interval to change color every 5 seconds (5000ms)
     setInterval(changeColor, 5000);
 }
+
+ello()
