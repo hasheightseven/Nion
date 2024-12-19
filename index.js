@@ -1,4 +1,4 @@
-const neonmonkey = document.getElementById('neon-monkey-main');
+export const neonmonkey = document.getElementById('neon-monkey-main');
 
 neonmonkey.style.backgroundColor = '#001928';
 
