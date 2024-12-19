@@ -7,3 +7,7 @@ const ellomast = document.getElementById('ello-mastaru');
 ellomast.textContent += '!!';
 
 ellomast.style.color = '#abcdef';
+
+ellomast.addEventListener('click', () => {
+  window.location.href = '/';
+});
