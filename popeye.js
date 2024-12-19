@@ -1,6 +1,13 @@
-import neonmonkey from './index.js';
+import neonmonkeymain from './index.js';
 
+const ellomast = document.createElement('div');
 
-neonmonkey.addEventListener('load', () => {
-  alert(`it's working fine don't worry! :)`);
+ellomast.textContent = 'nion!!';
+
+ellomast.style.color = '#abcdef';
+
+ellomast.addEventListener('click', () => {
+  ellomast.style.fontsize = ellomast.style.fontsize + 26;
 });
+
+neonmonkeymain.appendChild(ellomast);
