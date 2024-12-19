@@ -1,8 +1,4 @@
-import neonmonkeyheader from './index.js';
-
-const neonbar = document.createElement('nav');
-
-neonmonkeyheader.appendChild(nonbar);
+export const neonbar = document.createElement('nav');
 
 const logodiv = document.createElement('div');
 logodiv.textContent = 'logo';
