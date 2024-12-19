@@ -13,6 +13,7 @@ html, body {
 
 header {
     height: 15%;
+    background-color: red;
 }
 
 main {
@@ -20,8 +21,10 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 footer {
     height: 15%;
+    background-color: blue;
 }
