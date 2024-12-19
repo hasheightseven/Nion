@@ -1,6 +1,6 @@
-import neonbar from './neonheader.js';
-import neonmain from './neonmain.js';
-import neonfooter from './neonfooter.js';
+import { neonbar } from './neonheader.js';
+import { neonmain } from './neonmain.js';
+import { neonfooter } from './neonfooter.js';
 
 const neonmonkeyheader = document.getElementById('neon-monkey-header');
 neonmonkeyheader.appendChild(neonbar);
