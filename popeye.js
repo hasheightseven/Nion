@@ -1,4 +1,4 @@
 // ello popeye
 export default function Popeye() {
-    return `<div id='popeye'></div>`;
+    return `<div id='popeye'>popeye</div>`;
 }
