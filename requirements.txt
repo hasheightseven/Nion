@@ -2,3 +2,4 @@
 flask
 frozen-flask
 gunicorn
+requests
