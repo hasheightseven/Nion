@@ -33,7 +33,7 @@ jobs:
       
       - name: Generate static HTML
         run: |
-          python manage.py distill-local --force
+          python manage.py distill-local static_site --force
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
