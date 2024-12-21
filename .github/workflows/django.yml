@@ -22,12 +22,16 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Freeze Flask app
+      - name: Collect static files
         run: |
-          python freeze.py
+          python manage.py collectstatic --noinput
+      
+      - name: Generate static HTML
+        run: |
+          python manage.py distill-local static_site
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GHTOKEN_NION }}
-          publish_dir: ./build
+          publish_dir: ./static_site
