@@ -15,7 +15,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5.3.0
         with:
-          python-version: 3.11
+          python-version: 3.12
 
       - name: Install dependencies
         run: |
@@ -24,8 +24,7 @@ jobs:
 
       - name: Freeze Flask app
         run: |
-          pip install frozen-flask
-          python app.py freezer freeze
+          python freeze.py
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
