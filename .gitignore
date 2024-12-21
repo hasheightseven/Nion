@@ -1,2 +1,14 @@
-build.py
+
 requirements.txt
+
+
+---
+
+#### 10. **`.gitignore`**
+Prevent unnecessary files from being tracked in Git:
+```plaintext
+build/
+*.pyc
+__pycache__/
+.env
+.DS_Store
