@@ -1,4 +1,4 @@
 from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse("<h1>Welcome to My Django App</h1>")
+    return HttpResponse("<h1>N ION</h1>")
