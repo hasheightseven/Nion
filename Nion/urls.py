@@ -1,5 +1,5 @@
 """
-URL configuration for orangehoodie project.
+URL configuration for Nion project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -16,12 +16,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django_distill import distill_path
 from . import views
+
+def get_index():
+    return None  # No parameters for the index view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home'),
-    path('/settings', views.settings, name='settings'),
-    path('/username', views.username, name='username'),
-    path('/account', views.account, name='account')
+    distill_path('', views.home, name='home', distill_func=get_index),
+    # path('', views.home, name='home'),
+    path('settings/', views.settings, name='settings'),
+    path('username/', views.username, name='username'),
+    path('account/', views.account, name='account')
 ]
+
+
