@@ -24,17 +24,16 @@ jobs:
           pip install gunicorn psycopg2-binary
           pip freeze > requirements.txt
 
-
       - name: Collect static files
         run: |
           python manage.py collectstatic --noinput
       
-      - name: Generate static HTML
-        run: |
-          python manage.py distill-local static_site
-      
       - name: Create output directory
         run: mkdir -p /home/runner/work/Nion/Nion/static_site
+      
+      - name: Generate static HTML
+        run: |
+          python manage.py distill-local --force
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
