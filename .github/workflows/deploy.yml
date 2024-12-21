@@ -53,4 +53,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GHTOKEN_NION }}
-          publish_dir: ./site  # Directory where the static site is generated
+          publish_dir: ./build  # Directory where the static site is generated
