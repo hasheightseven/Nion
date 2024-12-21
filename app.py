@@ -12,7 +12,7 @@ def account():
     import requests
     response = requests.get('https://neonmonkey.in/Nion/')
     if response.status_code == 200:
-        return f'<hhtml>ello mastaruuuuu! how are you? Response data:{response.json()}</html>'
+        return f'<hhtml>ello mastaruuuuu! how are you? Response data:{response.json}</html>'
     else:
         return f'<html>ello mastaruuuuu! how are you? Response data:{response.status_code}</html>'
 
