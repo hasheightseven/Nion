@@ -32,6 +32,9 @@ jobs:
       - name: Generate static HTML
         run: |
           python manage.py distill-local static_site
+      
+      - name: Create output directory
+        run: mkdir -p /home/runner/work/Nion/Nion/static_site
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
