@@ -26,9 +26,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     distill_path('', views.home, name='home', distill_func=get_index),
     #path('', views.home, name='home'),
-    path('settings/', views.settings, name='settings'),
-    path('username/', views.username, name='username'),
-    path('account/', views.account, name='account')
+    path('Nion/settings/', views.settings, name='settings'),
+    path('Nion/username/', views.username, name='username'),
+    path('Nion/account/', views.account, name='account')
 ]
 
 
