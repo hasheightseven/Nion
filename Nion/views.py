@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 
-def home(request):
-    return HttpResponse("\
+
+START_HTML = f"\
         <!Doctype html>\
         <html lang='en'/>\
             <head>\
@@ -18,20 +18,31 @@ def home(request):
                         background-color: #92112687;\
                     }\
                 </style>\
-            </head>\
-            <body>\
-                <nav id='nion-navbar'>\
-                    <div id='nion-div-logo'>\
-                        <svg xmlns='https://www.w3.org/2000/scg/'>\
-                            <path d='M26 26 L26 87 L50 50 Z' fill='#001928'></path>\
-                        </svg>\
-                    </div>\
-                </nav>\
-            </body>\
-        </html>")
+            </head>"
+
+STOP_HTML = f"\
+        </body>\
+        </html>"
+        
+def home(request):
+    return HttpResponse("{ START_HTML }\
+        <nav id='nion-navbar'>\
+            <div id='nion-div-logo'>\
+                <svg xmlns='https://www.w3.org/2000/scg/'>\
+                    <path d='M26 26 L26 87 L50 50 Z' fill='#001928'></path>\
+                </svg>\
+            </div>\
+        </nav>\
+        { STOP_HTML }")
 def account(request):
-    return HttpResponse("<title>N ION- account</title>")
+    return HttpResponse("{ START_HTML }\
+        
+        { STOP_HTML }")
 def username(request):
-    return HttpResponse("<title>N ION - username</title>")
+    return HttpResponse("{ START_HTML }\
+        
+        { STOP_HTML }")
 def settings(request):
-    return HttpResponse("<title>N ION - settings</title>")
+    return HttpResponse("{ START_HTML }\
+        
+        { STOP_HTML }")
