@@ -23,26 +23,21 @@ START_HTML = f"\
 STOP_HTML = f"\
         </body>\
         </html>"
-        
-def home(request):
-    return HttpResponse(f"{ START_HTML }\
-        <nav id='nion-navbar'>\
+
+homehtml = START_HTML+"<nav id='nion-navbar'>\
             <div id='nion-div-logo'>\
                 <svg xmlns='https://www.w3.org/2000/scg/'>\
                     <path d='M26 26 L26 87 L50 50 Z' fill='#001928'></path>\
                 </svg>\
             </div>\
-        </nav>\
-        { STOP_HTML }")
+        </nav>"+STOP_HTML
+
+
+def home(request):
+    return HttpResponse(homehtml)
 def account(request):
-    return HttpResponse(f"{ START_HTML }\
-        
-        { STOP_HTML }")
+    return HttpResponse(homehtml)
 def username(request):
-    return HttpResponse(f"{ START_HTML }\
-        
-        { STOP_HTML }")
+    return HttpResponse(homehtml)
 def settings(request):
-    return HttpResponse(f"{ START_HTML }\
-        
-        { STOP_HTML }")
+    return HttpResponse(homehtml)
