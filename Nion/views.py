@@ -10,12 +10,12 @@ START_HTML = f"\
                 <title>N ION</title>\
                 <script>\
                         const nionnavbar = document.getElementById('nion-navbar');\
-                        nionnavbar.style.position = 'fixed';
-                        nionnavbar.style.width = '-webkit-fill-available';
-                        nionnavbar.style.height = '9vh';
-                        nionnavbar.style.display = 'flex';
-                        nionnavbar.style.alignItems = 'center';
-                        nionnavbar.style.justifyContent = 'space-around';
+                        nionnavbar.style.position = 'fixed';\
+                        nionnavbar.style.width = '-webkit-fill-available';\
+                        nionnavbar.style.height = '9vh';\
+                        nionnavbar.style.display = 'flex';\
+                        nionnavbar.style.alignItems = 'center';\
+                        nionnavbar.style.justifyContent = 'space-around';\
                 </script>\
             </head>"
 
