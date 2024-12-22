@@ -24,8 +24,8 @@ def get_index():
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #distill_path('', views.home, name='home', distill_func=get_index),
-    path('', views.home, name='home'),
+    distill_path('', views.home, name='home', distill_func=get_index),
+    #path('', views.home, name='home'),
     path('settings/', views.settings, name='settings'),
     path('username/', views.username, name='username'),
     path('account/', views.account, name='account')
