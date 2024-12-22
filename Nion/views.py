@@ -9,14 +9,14 @@ START_HTML = f"\
                 <meta name='viewport' content='width=device-width, initial-scale=1'/>\
                 <title>N ION</title>\
                 <style>\
-                    * {\
-                        margin: 0;\
-                        padding: 0;\
-                        box-sizing: border-box;\
-                    }\
-                    html, body {\
-                        background-color: #92112687;\
-                    }\
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
+                    html, body {
+                        background-color: #92112687;
+                    }
                 </style>\
             </head>"
 
