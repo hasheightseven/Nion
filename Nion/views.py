@@ -25,7 +25,7 @@ STOP_HTML = f"\
         </html>"
         
 def home(request):
-    return HttpResponse("{ START_HTML }\
+    return HttpResponse(f"{ START_HTML }\
         <nav id='nion-navbar'>\
             <div id='nion-div-logo'>\
                 <svg xmlns='https://www.w3.org/2000/scg/'>\
