@@ -8,16 +8,15 @@ START_HTML = f"\
                 <meta charset='utf-8'/>\
                 <meta name='viewport' content='width=device-width, initial-scale=1'/>\
                 <title>N ION</title>\
-                <style>\
-                    * {
-                        margin: 0;
-                        padding: 0;
-                        box-sizing: border-box;
-                    }
-                    html, body {
-                        background-color: #92112687;
-                    }
-                </style>\
+                <script>\
+                        const nionnavbar = document.getElementById('nion-navbar');\
+                        nionnavbar.style.position = 'fixed';
+                        nionnavbar.style.width = '-webkit-fill-available';
+                        nionnavbar.style.height = '9vh';
+                        nionnavbar.style.display = 'flex';
+                        nionnavbar.style.alignItems = 'center';
+                        nionnavbar.style.justifyContent = 'space-around';
+                </script>\
             </head>"
 
 STOP_HTML = f"\
