@@ -28,8 +28,8 @@ jobs:
         run: |
           python manage.py collectstatic --noinput
       
-      #- name: Create output directory
-       # run: mkdir -p /home/runner/work/Nion/Nion/static_site
+      - name: Create output directory
+        run: mkdir -p /home/runner/work/Nion/Nion/static_site
       
       - name: Generate static HTML
         run: |
