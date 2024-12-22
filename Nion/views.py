@@ -35,14 +35,14 @@ def home(request):
         </nav>\
         { STOP_HTML }")
 def account(request):
-    return HttpResponse("{ START_HTML }\
+    return HttpResponse(f"{ START_HTML }\
         
         { STOP_HTML }")
 def username(request):
-    return HttpResponse("{ START_HTML }\
+    return HttpResponse(f"{ START_HTML }\
         
         { STOP_HTML }")
 def settings(request):
-    return HttpResponse("{ START_HTML }\
+    return HttpResponse(f"{ START_HTML }\
         
         { STOP_HTML }")
